@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>attack</title>
+    <link rel="stylesheet" href="css/Base.css">
+    <link rel="stylesheet" href="css/index.css">
+
+    <link rel="stylesheet" type="text/css" href="css/jquery.classycolor.css" />
+</head>
+<body>
+
+    <div class="main">欢迎来到hacker,<br/><br/>这是一款装逼神器，设置好自己喜欢的界面，在键盘上一顿乱敲，惊呆身旁的小伙伴<br/>
+        数字1-6键弹出动画<br/>按shift呼出帮助界面，ctrl键呼出设置界面<br/>
+    F11全屏模式体验更炫酷</div>
+    <div class="logo"></div>
+    <div class="number">
+        <img src="images/gif/number.gif" alt="">
+    </div>
+    <div id="dl" class="dl">
+        <img src="images/close.png" alt="" class="dlimg1">
+        <br/>
+        <h1>DownLoading</h1>
+        <img src="images/downloading.gif" alt="" id="dlimg2">
+    </div>
+    <div id="helppaly" class="dl helppaly">
+        <img src="images/close.png" alt="" class="dlimg1">
+        <br/>
+        <h1>HELP</h1>
+        <br/>
+        迎来到hacker,<br/><br/>这是一款装逼神器，设置好自己喜欢的界面，在键盘上一顿乱敲，惊呆身旁的小伙伴<br/>
+        按shift呼出帮助界面，ctrl键呼出设置界面<br/>
+        数字1-6键弹出动画<br/>
+        esc退出所有动画<br/>
+        F11全屏模式体验更炫酷</div>
+
+    </div>
+    <div id="sdpaly" class="dl sdpaly">
+        <img src="images/close.png" alt="" class="dlimg1">
+        <br/>
+        <h1>Searching</h1>
+        <img src="images/ter.gif" alt="" id="dlimg2">
+    </div>
+    <div id="anpaly" class="dl anpaly">
+        <img src="images/close.png" alt="" class="dlimg1">
+        <br/>
+        <h1>Attacking</h1>
+        <img src="images/tra.gif" alt="" id="dlimg2">
+    </div>
+    <div id="lopaly" class="dl lopaly">
+        <img src="images/close.png" alt="" class="dlimg1">
+        <br/>
+        <h1>locking</h1>
+        <img src="images/int.gif" alt="" id="dlimg2">
+    </div>
+    <div id="firepaly" class="dl firepaly">
+        <img src="images/close.png" alt="" class="dlimg1">
+        <br/>
+        <h1>Ready to fire</h1>
+        <img src="images/root.gif" alt="" id="dlimg2">
+    </div>
+    <div id="map" class="map dl">
+        <img src="images/close.png" alt="" class="dlimg1">
+        <br/>
+        <h1>map</h1>
+        <img src="images/map.gif" alt="" id="dlimg2">
+    </div>
+    <div id="enter" class="enter dl">
+        <h1>enter fail</h1>
+    </div>
+    <div id="other" class="other dl">
+        <img src="images/close.png" alt="" class="dlimg1">
+        <br/>
+        <h1>other</h1>
+        <div class="otherinner">
+            <div class="dld"><p>Downloading</p></div>
+            <div class="sd"><p>Search Data</p></div>
+            <div class="an"><p>Attack Net</p></div>
+            <div class="lo"><p>lock on</p></div>
+            <div class="fire"><p>fire</p></div>
+        </div>
+
+    </div>
+    <aside class="aside">
+        <div class="folders">
+        <p data-fun="help">help</p>
+        </div>
+        <div class="folders" >
+            <p data-fun="setting">setting</p>
+        </div>
+        <div class="folders" >
+            <p data-fun="map">map</p>
+        </div>
+        <div class="folders" >
+            <p data-fun="other">other</p>
+        </div>
+    </aside>
+   
+    <footer class="footer">
+        <div class="color">
+            BG color:<br/>
+            <div class="colorpicker" id="bgcolor"></div>
+            <br/>
+            TXT color:<br/>
+            <div class="colorpicker1" id="txtcolor"></div>
+        </div>
+        <div class="changebg">
+            <h1>改变背景图片</h1>
+            <ul>
+                <li>green</li>
+                <li>grad1</li>
+                <li>grad2</li>
+                <li>bg1</li>
+                <li>bg2</li>
+                <li>bg3</li>
+                <li>bg4</li>
+                <li>bg5</li>
+                <li>nobg</li>
+            </ul>
+        </div>
+        <div class="changelogo">
+            <h1>改变LOGO</h1>
+            <ul>
+                <li>NOPIC</li>
+                <li>AP</li>
+                <li>WS</li>
+                <li>GI</li>
+                <li>HF</li>
+                <li>GE</li>
+                <li>UN</li>
+                <li>PA</li>
+                <li>TY</li>
+                <li>BN</li>
+                <li>ZD</li>
+                <li>AL</li>
+                <li>OP</li>
+                <li>QE</li>
+                <li>FD</li>
+                <li>GT</li>
+                <li>AQ</li>
+            </ul>
+        </div>
+        <div class="changefont">
+            <h1>改变字体</h1>
+            <span>
+                font-size:
+                <input type="range" id="fz" min="12"Value="12" max="25" >
+            </span>
+               <span>
+                speed:
+                   <input type="range" id="speed" min="1" Value="3" max="6">
+
+            </span>
+            <span>
+                选择字体：
+            <select name="ff" id="changeff">
+                <option value="微软雅黑">微软雅黑</option>
+                <option value="宋体">宋体</option>
+                <option value="华文细黑">华文细黑</option>
+                <option value="fantasy">fantasy</option>
+                <option value="Arial">Arial</option>
+                <option value="Lucida Grande">Lucida Grande</option>
+                <option value="Trebuchet MS">Trebuchet MS</option>
+                <option value="monospace">monospace</option>
+
+
+                
+            </select>
+            </span>
+            <span>
+                <input type="checkbox" id="foldercheckbox" checked="checked">右侧栏显示
+            </span>
+          
+
+        </div>
+        <div class="pic">
+            <div class="time">
+                时间：
+                <br/>
+                <span>
+                    12:12:12
+                </span>
+            </div>
+            <div class="world">
+                <img src="images/gif/world.gif" alt="">
+            </div>
+        </div>
+
+    </footer>
+    <img src="images/btn_03.png" width:"50px" height="50px" id="imgbtn" alt="">
+</body>
+    <script src="js/jquery-1.7.2.js" type="text/javascript"></script>
+    <script src="js/jquery.classycolor.js" type="text/javascript"></script>
+    <script src="js/code.js" type="text/javascript"></script>
+    <script src="js/index.js" type="text/javascript"></script>
+    <script src="js/function.js" type="text/javascript"></script>
+    <script src="js/keyboard.js" type="text/javascript"></script>
+    <script src="js/Color.js" type="text/javascript"></script>
+</html>

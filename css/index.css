@@ -1,0 +1,341 @@
+body{
+    width: 100%;
+    background: url(../images/bg5.png) no-repeat;
+    /*background-image:url(../images/bg1.png);*/
+    /*-webkit-background-size: cover*/
+    background-size: cover;;
+    background-color: #000000;
+    background-attachment: fixed;
+    background-position: center center;
+    overflow: hidden;
+    -webkit-user-select: none;
+
+}
+.main{
+    padding: 10px;
+    width: 96%;
+    /*font: 400 50px/100px "宋体";*/
+
+    /*height: 90%;*/
+    /*position: absolute;*/
+    /*left:2%;*/
+    /*top:5%;*/
+    font-size: 22px;
+   line-height: 30px;
+   font-family: "微软雅黑";
+
+}
+.footer{
+    background-color: #000;
+    position: fixed;
+    bottom: 20px;
+    left: 5%;
+    width: 90%;
+    height: 200px;
+    border-radius: 15px;
+    color: #fff;
+    border: 5px solid #808080;
+    display: none;
+}
+.footer h1,.footer span{
+    font: 700 16px/30px "\5FAE\8F6F\96C5\9ED1";
+}
+.color{
+    text-align: center;
+    width: 8%;
+    height: 180px;
+    border: 1px solid red;
+    float: left;
+    margin: 10px 1%;
+    font: 700 16px/30px "\5FAE\8F6F\96C5\9ED1";
+}
+.footer>div{
+    border: 2px solid #6495ed;
+    border-radius: 5px;
+
+}
+
+.color div{
+
+}
+#imgbtn{
+    position: fixed;
+    right: 13px;
+    bottom: 20px;
+}
+.changebg{
+    width: 14%;
+    height: 180px;
+    margin: 10px;
+    margin-left: 1%;
+    border: 1px solid red;
+    float: left;
+    
+}
+.changebg ul,.changebg h1{
+    padding-left: 2.5%;
+}
+.changebg li{
+    width: 30%;
+    height: 40px;
+    float: left;
+    border: 1px solid red;
+    margin-right:2.0%;
+    margin-top:5px;
+    background-color: #c8c8c8;
+}
+
+.changelogo{
+    width: 25%;
+    height: 180px;
+    margin: 10px 1%;
+    border: 1px solid red;
+    float: left;
+}
+.changelogo ul,.changelogo h1{
+    padding-left: 1%;
+}
+
+.changelogo li{
+    width: 14%;
+    height: 40px;
+    float: left;
+    border: 1px solid red;
+    margin-right:2%;
+    margin-top:5px;
+    background-color: #c8c8c8;
+}
+.changefont{
+    padding: 0 1%;
+    width: 15%;
+    height: 180px;
+    border: 1px solid red;
+    float: left;
+    font-size: 20px;
+    margin: 10px 0;
+}
+.changefont span {
+    display: block;
+    height: 35px;
+    vertical-align: middle;
+
+}
+.changefont input{
+    width: 40%;
+    height: 12px;
+}
+#changeff{
+    width:  40%;
+}
+#foldercheckbox{
+    width: 15px;
+    height: 15px;
+}
+.pic{
+    width: 25%;
+    height: 180px;
+    margin: 10px;
+    border: 1px solid red;
+    float: right;
+}
+.time{
+    width: 100px;
+    height: 50px;
+    float: left;
+    margin-top: 50px;
+}
+.world{
+    float: right;
+    padding: 10px;
+}
+.logo{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: -60px;
+    z-index: -1;
+    background-position: center;
+    background-image: url(../images/logo/AP.png);
+    background-repeat: no-repeat;
+}
+.number img{
+    position: fixed;
+    top: 50px;
+    right: 50px;
+    width: 400px;
+    display: none;
+}
+.aside{
+    position: fixed;
+    width: 100px;
+    height: 450px;
+    top: 25px;
+    right: 25px;
+    /*border: 1px solid red;*/
+}
+.folders{
+    position: relative;
+    width: 60px;
+    height: 50px;
+    margin: 35px 20px;
+    background-color:  #c8c8c8;
+}
+.folders:before{
+    content: "";
+    width: 30px;
+    height: 6px;
+    background-color: #e5e5e5;
+    position: absolute;
+    top: -6px;
+    right:30px;
+    border-radius: 0 3px 0 0;
+}
+.folders p{
+    padding-top:50px;
+    text-align: center;
+
+}
+.dl{
+    position: fixed;
+    left:50%;
+    top:50%;
+    margin-top:-130px;
+    margin-left:-307px;
+    width: 615px;
+    height: 220px;
+    padding: 20px;
+    border: 3px solid red;
+    border-top: 15px solid red;
+    border-radius: 5px 5px 0 0;
+    color: red;
+    background-color: #000;
+    display: none;
+
+}
+.dl .dlimg1{
+    width: 15px;
+    height: 15px;
+    float: right;
+}
+.dl h1{
+    text-align: center;
+    font-size: 50px;
+    line-height:50px;
+}
+.dl #dlimg2{
+    width: 500px;
+    height: 113px;
+    position: absolute;
+    left:0;
+    right:0;
+    bottom: 0;
+    margin:0 auto;
+}
+.helppaly{
+    width: 400px;
+    height: 400px;
+    margin-left:-230px;
+    margin-top:-230px;
+    /*display: block;*/
+}
+.enter{
+    width: 300px;
+    height: 50px;
+    margin-left:-170px;
+    margin-top:-25px;
+    /*display: block;*/
+    background: url("../images/denied.gif");
+    color: #498;
+    border: 3px solid red;
+    border-radius: 3px 3px 0 0;
+}
+.map{
+    width: 650px;
+    height: 500px;
+    margin-left:-325px;
+    margin-top:-280px;
+
+}
+.map #dlimg2{
+    width: 650px;
+    height: 430px;
+}
+.anpaly {
+    width: 630px;
+    height: 400px;
+    margin-left: -60px;
+    margin-top: -400px;
+   /* display: block;*/
+}
+.anpaly #dlimg2{
+    width: 630px;
+    height: 340px;
+}
+.lopaly{
+    width: 600px;
+    height: 380px;
+    margin-left: -600px;
+    margin-top: -400px;
+    /*display: block;*/
+}
+.lopaly #dlimg2{
+    width: 600px;
+    height: 325px;
+}
+.firepaly{
+    width: 573px;
+    height: 390px;
+    margin-left: -50px;
+    margin-top: -100px;
+   /* display: block;*/
+}
+.firepaly #dlimg2{
+    width: 600px;
+    height: 339px;
+}
+.sdpaly{
+    width: 620px;
+    height: 400px;
+    margin-left: -630px;
+    margin-top: -130px;
+
+}
+.sdpaly #dlimg2{
+    width: 620px;
+    height: 318px;
+}
+
+.other{
+    width: 500px;
+    height: 400px;
+    margin-left:-250px;
+    margin-top:-230px;
+    display: none;
+}
+
+.otherinner div{
+    position: relative;
+    float: left;
+    width: 70px;
+    height: 50px;
+    margin-right: 20px;
+    background-color: red;
+    margin-top: 10px;
+}
+.otherinner div:before{
+    content: "";
+    width: 30px;
+    height: 6px;
+    background-color: #c8c8c8;
+    position: absolute;
+    top: -6px;
+    right:30px;
+    border-radius: 0 3px 0 0;
+
+}
+.otherinner div p{
+    padding-top: 38px;
+    text-align: center;
+}
+
+
